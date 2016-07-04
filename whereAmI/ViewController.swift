@@ -65,12 +65,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                     // create a placemark
                     //  testing to see if we can convert the first return in an array (location)
                     let p = (placemarks![0])
-                        
+                    
+//                    print(p)
+                    
                     if (p.subThoroughfare != nil) {
                         
                         let subThoroughFare = p.subThoroughfare
                 
-                        self.addressLabel.text = "\(subThoroughFare) \(p.thoroughfare) \n \(p.subLocality) \n \(p.subAdministrativeArea) \n \(p.postalCode) \n \(p.country)"
+                        self.addressLabel.text = "\(subThoroughFare!) \(p.thoroughfare!) \n \(p.locality!) \n \(p.subAdministrativeArea!) \n \(p.postalCode!) \n \(p.country!)"
                         
                     }
                         
